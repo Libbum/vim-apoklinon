@@ -87,20 +87,20 @@ else
   let s:changebg   = "61"
   let s:changefg   = "229"
   if g:apoklinon_use_Xresources == 1
-    let s:onyx       = "0"    " Onyx
+    let s:onyx       = "8"    " Onyx
     let s:jazzberry  = "1"    " Jazzberry Jam
-    let s:brick      = "2"    " Brick Red
+    let s:brick      = "9"    " Brick Red
     let s:orange     = "3"    " Outrageous Orange
-    let s:sandy      = "4"    " Sandy Brown
-    let s:flavescent = "5"    " Flavescent
-    let s:lemon      = "6"    " Lemon Chiffon
+    let s:sandy      = "12"    " Sandy Brown
+    let s:flavescent = "10"    " Flavescent
+    let s:lemon      = "13"    " Lemon Chiffon
     let s:platinum   = "7"    " Platinum
-    let s:liver      = "8"    " Liver 
-    let s:lavender   = "9"    " Dark Lavender
-    let s:blue       = "10"   " Tufts Blue
-    let s:aqua       = "11"   " Medium Aquamarine
-    let s:apple      = "12"   " Granny Smith Apple
-    let s:khaki      = "13"   " Light Khaki
+    let s:liver      = "0"    " Liver 
+    let s:lavender   = "5"    " Dark Lavender
+    let s:blue       = "4"   " Tufts Blue
+    let s:aqua       = "6"   " Medium Aquamarine
+    let s:apple      = "2"   " Granny Smith Apple
+    let s:khaki      = "11"   " Light Khaki
     let s:taupe      = "14"   " Taupe Gray
     let s:gray       = "15"   " Gray
   else

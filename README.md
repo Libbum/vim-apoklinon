@@ -34,4 +34,12 @@ the way that it was intended, it is highly recommended that you:
 
 ## Screenshots
 
-Will some them up soon
+Will put some up soon (when the scheme is ready)
+
+## TODO
+
+- [X] Get Xdefaults under wraps for terminal colours.
+- [X] Shuffle less used colors to bold.
+- [ ] Rework monochrome gradient - probably too divergent, we can use most of these colours from the 256 palette, there's no need to fill Xdefaults with them.
+- [ ] If I remove most (if not all) the monochrome data, the divergence spectrum could be increased. There isn't a really decent green here and too much yellow probably.
+
