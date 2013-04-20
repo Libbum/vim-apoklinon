@@ -60,17 +60,17 @@ let colors_name = "apoklinon"
 if has("gui_running")
   let s:vmode      = "gui"
   let s:background = "#1d1f21"  "TODO - these are still hybrid
-  let s:foreground = "#c5c8c6"
-  let s:selection  = "#373b41"
-  let s:line       = "#282a2e"
-  let s:comment    = "#707880"
-  let s:red        = "#cc6666"
+  let s:gray       = "#c5c8c6"
+  let s:liver  = "#373b41"
+  let s:taupe       = "#282a2e"
+  let s:onyx    = "#707880"
+  let s:jazzberry        = "#cc6666"
   let s:orange     = "#de935f"
-  let s:yellow     = "#f0c674"
-  let s:green      = "#b5bd68"
+  let s:sandy     = "#f0c674"
+  let s:apple      = "#b5bd68"
   let s:aqua       = "#8abeb7"
   let s:blue       = "#81a2be"
-  let s:purple     = "#b294bb"
+  let s:lavender     = "#b294bb"
   let s:window     = "#303030"
   let s:darkcolumn = "#1c1c1c"
   let s:addbg      = "#5F875F"
@@ -87,18 +87,6 @@ else
   let s:changebg   = "61"
   let s:changefg   = "229"
   if g:apoklinon_use_Xresources == 1
-    let s:foreground = "15"   " Gray
-    let s:selection  = "8"    " Liver 
-    let s:line       = "0"    " Onyx
-    let s:comment    = "7"    " Platinum
-    let s:red        = "9"    " Dark Lavender
-    let s:orange     = "3"    " Outrageous Orange
-    let s:yellow     = "11"   " Medium Aquamarine
-    let s:green      = "10"   " Tufts Blue
-    let s:aqua       = "14"   " Taupe Gray
-    let s:blue       = "12"   " Granny Smith Apple
-    let s:purple     = "13"   " Light Khaki
-    
     let s:onyx       = "0"    " Onyx
     let s:jazzberry  = "1"    " Jazzberry Jam
     let s:brick      = "2"    " Brick Red
@@ -116,18 +104,6 @@ else
     let s:taupe      = "14"   " Taupe Gray
     let s:gray       = "15"   " Gray
   else
-    let s:foreground = "145"
-    let s:selection  = "59"
-    let s:line       = "16"
-    let s:comment    = "188"
-    let s:red        = "61"
-    let s:orange     = "203"
-    let s:yellow     = "73"
-    let s:green      = "67"
-    let s:aqua       = "102"
-    let s:blue       = "151"
-    let s:purple     = "192"
-    
     let s:onyx       = "16"   " Onyx
     let s:jazzberry  = "125"  " Jazzberry Jam
     let s:brick      = "167"  " Brick Red
@@ -164,18 +140,18 @@ let s:i      = ",italic"
 " Highlighting Primitives:"{{{
 " ----------------------------------------------------------------------------
 exe "let s:bg_none       = ' ".s:vmode."bg=".s:none      ."'"
-exe "let s:bg_foreground = ' ".s:vmode."bg=".s:foreground."'"
+exe "let s:bg_foreground = ' ".s:vmode."bg=".s:gray      ."'"
 exe "let s:bg_background = ' ".s:vmode."bg=".s:background."'"
-exe "let s:bg_selection  = ' ".s:vmode."bg=".s:selection ."'"
-exe "let s:bg_line       = ' ".s:vmode."bg=".s:line      ."'"
-exe "let s:bg_comment    = ' ".s:vmode."bg=".s:comment   ."'"
-exe "let s:bg_red        = ' ".s:vmode."bg=".s:red       ."'"
+exe "let s:bg_selection  = ' ".s:vmode."bg=".s:liver     ."'"
+exe "let s:bg_line       = ' ".s:vmode."bg=".s:taupe     ."'"
+exe "let s:bg_comment    = ' ".s:vmode."bg=".s:onyx      ."'"
+exe "let s:bg_red        = ' ".s:vmode."bg=".s:jazzberry ."'"
 exe "let s:bg_orange     = ' ".s:vmode."bg=".s:orange    ."'"
-exe "let s:bg_yellow     = ' ".s:vmode."bg=".s:yellow    ."'"
-exe "let s:bg_green      = ' ".s:vmode."bg=".s:green     ."'"
+exe "let s:bg_yellow     = ' ".s:vmode."bg=".s:sandy     ."'"
+exe "let s:bg_green      = ' ".s:vmode."bg=".s:apple     ."'"
 exe "let s:bg_aqua       = ' ".s:vmode."bg=".s:aqua      ."'"
 exe "let s:bg_blue       = ' ".s:vmode."bg=".s:blue      ."'"
-exe "let s:bg_purple     = ' ".s:vmode."bg=".s:purple    ."'"
+exe "let s:bg_purple     = ' ".s:vmode."bg=".s:lavender  ."'"
 exe "let s:bg_window     = ' ".s:vmode."bg=".s:window    ."'"
 exe "let s:bg_darkcolumn = ' ".s:vmode."bg=".s:darkcolumn."'"
 exe "let s:bg_addbg      = ' ".s:vmode."bg=".s:addbg     ."'"
@@ -184,18 +160,18 @@ exe "let s:bg_changebg   = ' ".s:vmode."bg=".s:changebg  ."'"
 exe "let s:bg_changefg   = ' ".s:vmode."bg=".s:changefg  ."'"
 
 exe "let s:fg_none       = ' ".s:vmode."fg=".s:none      ."'"
-exe "let s:fg_foreground = ' ".s:vmode."fg=".s:foreground."'"
+exe "let s:fg_foreground = ' ".s:vmode."fg=".s:gray      ."'"
 exe "let s:fg_background = ' ".s:vmode."fg=".s:background."'"
-exe "let s:fg_selection  = ' ".s:vmode."fg=".s:selection ."'"
-exe "let s:fg_line       = ' ".s:vmode."fg=".s:line      ."'"
-exe "let s:fg_comment    = ' ".s:vmode."fg=".s:comment   ."'"
-exe "let s:fg_red        = ' ".s:vmode."fg=".s:red       ."'"
+exe "let s:fg_selection  = ' ".s:vmode."fg=".s:liver     ."'"
+exe "let s:fg_line       = ' ".s:vmode."fg=".s:taupe     ."'"
+exe "let s:fg_comment    = ' ".s:vmode."fg=".s:onyx      ."'"
+exe "let s:fg_red        = ' ".s:vmode."fg=".s:jazzberry ."'"
 exe "let s:fg_orange     = ' ".s:vmode."fg=".s:orange    ."'"
-exe "let s:fg_yellow     = ' ".s:vmode."fg=".s:yellow    ."'"
-exe "let s:fg_green      = ' ".s:vmode."fg=".s:green     ."'"
+exe "let s:fg_yellow     = ' ".s:vmode."fg=".s:sandy     ."'"
+exe "let s:fg_green      = ' ".s:vmode."fg=".s:apple     ."'"
 exe "let s:fg_aqua       = ' ".s:vmode."fg=".s:aqua      ."'"
 exe "let s:fg_blue       = ' ".s:vmode."fg=".s:blue      ."'"
-exe "let s:fg_purple     = ' ".s:vmode."fg=".s:purple    ."'"
+exe "let s:fg_purple     = ' ".s:vmode."fg=".s:lavender  ."'"
 exe "let s:fg_window     = ' ".s:vmode."fg=".s:window    ."'"
 exe "let s:fg_darkcolumn = ' ".s:vmode."fg=".s:darkcolumn."'"
 exe "let s:fg_addbg      = ' ".s:vmode."fg=".s:addbg     ."'"
@@ -217,18 +193,18 @@ exe "let s:fmt_revb      = ' ".s:vmode."=NONE".s:r.s:b.  " term=NONE".s:r.s:b."'
 
 if has("gui_running")
   exe "let s:sp_none       = ' guisp=".s:none      ."'"
-  exe "let s:sp_foreground = ' guisp=".s:foreground."'"
+  exe "let s:sp_foreground = ' guisp=".s:gray      ."'"
   exe "let s:sp_background = ' guisp=".s:background."'"
-  exe "let s:sp_selection  = ' guisp=".s:selection ."'"
-  exe "let s:sp_line       = ' guisp=".s:line      ."'"
-  exe "let s:sp_comment    = ' guisp=".s:comment   ."'"
-  exe "let s:sp_red        = ' guisp=".s:red       ."'"
+  exe "let s:sp_selection  = ' guisp=".s:liver     ."'"
+  exe "let s:sp_line       = ' guisp=".s:taupe     ."'"
+  exe "let s:sp_comment    = ' guisp=".s:onyx      ."'"
+  exe "let s:sp_red        = ' guisp=".s:jazzberry ."'"
   exe "let s:sp_orange     = ' guisp=".s:orange    ."'"
-  exe "let s:sp_yellow     = ' guisp=".s:yellow    ."'"
-  exe "let s:sp_green      = ' guisp=".s:green     ."'"
+  exe "let s:sp_yellow     = ' guisp=".s:sandy     ."'"
+  exe "let s:sp_green      = ' guisp=".s:apple     ."'"
   exe "let s:sp_aqua       = ' guisp=".s:aqua      ."'"
   exe "let s:sp_blue       = ' guisp=".s:blue      ."'"
-  exe "let s:sp_purple     = ' guisp=".s:purple    ."'"
+  exe "let s:sp_purple     = ' guisp=".s:lavender  ."'"
   exe "let s:sp_window     = ' guisp=".s:window    ."'"
   exe "let s:sp_addbg      = ' guisp=".s:addbg     ."'"
   exe "let s:sp_addfg      = ' guisp=".s:addfg     ."'"
