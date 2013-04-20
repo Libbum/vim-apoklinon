@@ -59,7 +59,7 @@ let colors_name = "apoklinon"
 " ----------------------------------------------------------------------------
 if has("gui_running")
   let s:vmode      = "gui"
-  let s:background = "#1d1f21"
+  let s:background = "#1d1f21"  "TODO - these are still hybrid
   let s:foreground = "#c5c8c6"
   let s:selection  = "#373b41"
   let s:line       = "#282a2e"
@@ -79,37 +79,37 @@ if has("gui_running")
   let s:changefg   = "#d7d7ff"
 else
   let s:vmode      = "cterm"
-  let s:background = "234"
-  let s:window     = "236"
-  let s:darkcolumn = "234"
-  let s:addbg      = "65"
-  let s:addfg      = "193"
-  let s:changebg   = "60"
-  let s:changefg   = "189"
+  let s:background = "16"
+  let s:window     = "59"
+  let s:darkcolumn = "16"
+  let s:addbg      = "151"
+  let s:addfg      = "192"
+  let s:changebg   = "61"
+  let s:changefg   = "229"
   if g:apoklinon_use_Xresources == 1
-    let s:foreground = "15"   " White
-    let s:selection  = "8"    " DarkGrey
-    let s:line       = "0"    " Black
-    let s:comment    = "7"    " LightGrey
-    let s:red        = "9"    " LightRed
-    let s:orange     = "3"    " DarkYellow
-    let s:yellow     = "11"   " LightYellow
-    let s:green      = "10"   " LightGreen
-    let s:aqua       = "14"   " LightCyan
-    let s:blue       = "12"   " LightBlue
-    let s:purple     = "13"   " LightMagenta
+    let s:foreground = "15"   " Gray
+    let s:selection  = "8"    " Liver 
+    let s:line       = "0"    " Onyx
+    let s:comment    = "7"    " Platinum
+    let s:red        = "9"    " Dark Lavender
+    let s:orange     = "3"    " Outrageous Orange
+    let s:yellow     = "11"   " Medium Aquamarine
+    let s:green      = "10"   " Tufts Blue
+    let s:aqua       = "14"   " Taupe Gray
+    let s:blue       = "12"   " Granny Smith Apple
+    let s:purple     = "13"   " Light Khaki
   else
-    let s:foreground = "250"
-    let s:selection  = "237"
-    let s:line       = "235"
-    let s:comment    = "243"
-    let s:red        = "167"
-    let s:orange     = "173"
-    let s:yellow     = "221"
-    let s:green      = "143"
-    let s:aqua       = "109"
-    let s:blue       = "110"
-    let s:purple     = "139"
+    let s:foreground = "145"
+    let s:selection  = "59"
+    let s:line       = "16"
+    let s:comment    = "188"
+    let s:red        = "61"
+    let s:orange     = "203"
+    let s:yellow     = "73"
+    let s:green      = "67"
+    let s:aqua       = "102"
+    let s:blue       = "151"
+    let s:purple     = "192"
   endif
 endif
 
