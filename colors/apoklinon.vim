@@ -98,6 +98,23 @@ else
     let s:aqua       = "14"   " Taupe Gray
     let s:blue       = "12"   " Granny Smith Apple
     let s:purple     = "13"   " Light Khaki
+    
+    let s:onyx       = "0"    " Onyx
+    let s:jazzberry  = "1"    " Jazzberry Jam
+    let s:brick      = "2"    " Brick Red
+    let s:orange     = "3"    " Outrageous Orange
+    let s:sandy      = "4"    " Sandy Brown
+    let s:flavescent = "5"    " Flavescent
+    let s:lemon      = "6"    " Lemon Chiffon
+    let s:platinum   = "7"    " Platinum
+    let s:liver      = "8"    " Liver 
+    let s:lavender   = "9"    " Dark Lavender
+    let s:blue       = "10"   " Tufts Blue
+    let s:aqua       = "11"   " Medium Aquamarine
+    let s:apple      = "12"   " Granny Smith Apple
+    let s:khaki      = "13"   " Light Khaki
+    let s:taupe      = "14"   " Taupe Gray
+    let s:gray       = "15"   " Gray
   else
     let s:foreground = "145"
     let s:selection  = "59"
@@ -110,6 +127,23 @@ else
     let s:aqua       = "102"
     let s:blue       = "151"
     let s:purple     = "192"
+    
+    let s:onyx       = "16"   " Onyx
+    let s:jazzberry  = "125"  " Jazzberry Jam
+    let s:brick      = "167"  " Brick Red
+    let s:orange     = "203"  " Outrageous Orange
+    let s:sandy      = "215"  " Sandy Brown
+    let s:flavescent = "222"  " Flavescent
+    let s:lemon      = "229"  " Lemon Chiffon
+    let s:platinum   = "188"  " Platinum
+    let s:liver      = "59"   " Liver 
+    let s:lavender   = "61"   " Dark Lavender
+    let s:blue       = "67"   " Tufts Blue
+    let s:aqua       = "73"   " Medium Aquamarine
+    let s:apple      = "151"  " Granny Smith Apple
+    let s:khaki      = "192"  " Light Khaki
+    let s:taupe      = "102"  " Taupe Gray
+    let s:gray       = "145"  " Gray
   endif
 endif
 
