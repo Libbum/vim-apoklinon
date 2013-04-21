@@ -60,9 +60,9 @@ let colors_name = "apoklinon"
 if has("gui_running")
   let s:vmode      = "gui"
   let s:background = "#1d1f21"  "TODO - these are still hybrid
-  let s:gray       = "#c5c8c6"
-  let s:liver  = "#373b41"
-  let s:taupe       = "#282a2e"
+  let s:dgray       = "#c5c8c6"
+  let s:davgray= "#373b41"
+  let s:gray        = "#282a2e"
   let s:onyx    = "#707880"
   let s:jazzberry        = "#cc6666"
   let s:orange     = "#de935f"
@@ -80,7 +80,7 @@ if has("gui_running")
 else
   let s:vmode      = "cterm"
   let s:background = "16"
-  let s:window     = "59"
+  let s:window     = "240"
   let s:darkcolumn = "16"
   let s:addbg      = "151"
   let s:addfg      = "192"
@@ -91,35 +91,35 @@ else
     let s:jazzberry  = "1"    " Jazzberry Jam
     let s:brick      = "9"    " Brick Red
     let s:orange     = "3"    " Outrageous Orange
-    let s:sandy      = "12"    " Sandy Brown
-    let s:flavescent = "10"    " Flavescent
-    let s:lemon      = "13"    " Lemon Chiffon
-    let s:platinum   = "7"    " Platinum
-    let s:liver      = "0"    " Liver 
+    let s:sandy      = "12"   " Sandy Brown
+    let s:flavescent = "10"   " Flavescent
+    let s:lemon      = "13"   " Lemon Chiffon
+    let s:lgray      = "7"    " Light Gray  
+    let s:davgray    = "0"    " Davy's Gray 
     let s:lavender   = "5"    " Dark Lavender
-    let s:blue       = "4"   " Tufts Blue
-    let s:aqua       = "6"   " Medium Aquamarine
-    let s:apple      = "2"   " Granny Smith Apple
+    let s:blue       = "4"    " Tufts Blue
+    let s:aqua       = "6"    " Medium Aquamarine
+    let s:apple      = "2"    " Granny Smith Apple
     let s:khaki      = "11"   " Light Khaki
-    let s:taupe      = "14"   " Taupe Gray
-    let s:gray       = "15"   " Gray
+    let s:gray       = "14"   " Gray=
+    let s:dgray      = "15"   " Dark Gray
   else
-    let s:onyx       = "16"   " Onyx
+    let s:onyx       = "235"  " Onyx
     let s:jazzberry  = "125"  " Jazzberry Jam
     let s:brick      = "167"  " Brick Red
     let s:orange     = "203"  " Outrageous Orange
     let s:sandy      = "215"  " Sandy Brown
     let s:flavescent = "222"  " Flavescent
     let s:lemon      = "229"  " Lemon Chiffon
-    let s:platinum   = "188"  " Platinum
-    let s:liver      = "59"   " Liver 
+    let s:lgray      = "252"  " Light Gray
+    let s:davgray    = "240"  " Davy's Gray 
     let s:lavender   = "61"   " Dark Lavender
     let s:blue       = "67"   " Tufts Blue
     let s:aqua       = "73"   " Medium Aquamarine
     let s:apple      = "151"  " Granny Smith Apple
     let s:khaki      = "192"  " Light Khaki
-    let s:taupe      = "102"  " Taupe Gray
-    let s:gray       = "145"  " Gray
+    let s:gray       = "244"  " Gray=
+    let s:dgray      = "248"  " Dark Gray
   endif
 endif
 
@@ -154,15 +154,15 @@ exe "let s:bg_orange     = ' ".s:vmode."bg=".s:orange    ."'"
 exe "let s:bg_sandy      = ' ".s:vmode."bg=".s:sandy     ."'"
 exe "let s:bg_flavescent = ' ".s:vmode."bg=".s:flavescent."'"
 exe "let s:bg_lemon      = ' ".s:vmode."bg=".s:lemon     ."'"
-exe "let s:bg_platinum   = ' ".s:vmode."bg=".s:platinum  ."'"
-exe "let s:bg_liver      = ' ".s:vmode."bg=".s:liver     ."'"
+exe "let s:bg_lgray      = ' ".s:vmode."bg=".s:lgray     ."'"
+exe "let s:bg_davgray    = ' ".s:vmode."bg=".s:davgray   ."'"
 exe "let s:bg_lavender   = ' ".s:vmode."bg=".s:lavender  ."'"
 exe "let s:bg_blue       = ' ".s:vmode."bg=".s:blue      ."'"
 exe "let s:bg_aqua       = ' ".s:vmode."bg=".s:aqua      ."'"
 exe "let s:bg_apple      = ' ".s:vmode."bg=".s:apple     ."'"
 exe "let s:bg_khaki      = ' ".s:vmode."bg=".s:khaki     ."'"
-exe "let s:bg_taupe      = ' ".s:vmode."bg=".s:taupe     ."'"
 exe "let s:bg_gray       = ' ".s:vmode."bg=".s:gray      ."'"
+exe "let s:bg_dgray      = ' ".s:vmode."bg=".s:dgray     ."'"
 
 exe "let s:fg_none       = ' ".s:vmode."fg=".s:none      ."'"
 exe "let s:fg_background = ' ".s:vmode."fg=".s:background."'"
@@ -179,15 +179,15 @@ exe "let s:fg_orange     = ' ".s:vmode."fg=".s:orange    ."'"
 exe "let s:fg_sandy      = ' ".s:vmode."fg=".s:sandy     ."'"
 exe "let s:fg_flavescent = ' ".s:vmode."fg=".s:flavescent."'"
 exe "let s:fg_lemon      = ' ".s:vmode."fg=".s:lemon     ."'"
-exe "let s:fg_platinum   = ' ".s:vmode."fg=".s:platinum  ."'"
-exe "let s:fg_liver      = ' ".s:vmode."fg=".s:liver     ."'"
+exe "let s:fg_lgray      = ' ".s:vmode."fg=".s:lgray     ."'"
+exe "let s:fg_davgray    = ' ".s:vmode."fg=".s:davgray   ."'"
 exe "let s:fg_lavender   = ' ".s:vmode."fg=".s:lavender  ."'"
 exe "let s:fg_blue       = ' ".s:vmode."fg=".s:blue      ."'"
 exe "let s:fg_aqua       = ' ".s:vmode."fg=".s:aqua      ."'"
 exe "let s:fg_apple      = ' ".s:vmode."fg=".s:apple     ."'"
 exe "let s:fg_khaki      = ' ".s:vmode."fg=".s:khaki     ."'"
-exe "let s:fg_taupe      = ' ".s:vmode."fg=".s:taupe     ."'"
 exe "let s:fg_gray       = ' ".s:vmode."fg=".s:gray      ."'"
+exe "let s:fg_dgray      = ' ".s:vmode."fg=".s:dgray     ."'"
 
 exe "let s:fmt_none      = ' ".s:vmode."=NONE".          " term=NONE"        ."'"
 exe "let s:fmt_bold      = ' ".s:vmode."=NONE".s:b.      " term=NONE".s:b    ."'"
@@ -204,10 +204,10 @@ exe "let s:fmt_revb      = ' ".s:vmode."=NONE".s:r.s:b.  " term=NONE".s:r.s:b."'
 "TODO: Update GUI SETTINGS TOO
 if has("gui_running")
   exe "let s:sp_none       = ' guisp=".s:none      ."'"
-  exe "let s:sp_foreground = ' guisp=".s:gray      ."'"
+  exe "let s:sp_foreground = ' guisp=".s:dgray     ."'"
   exe "let s:sp_background = ' guisp=".s:background."'"
-  exe "let s:sp_selection  = ' guisp=".s:liver     ."'"
-  exe "let s:sp_line       = ' guisp=".s:taupe     ."'"
+  exe "let s:sp_selection  = ' guisp=".s:davgray   ."'"
+  exe "let s:sp_line       = ' guisp=".s:gray      ."'"
   exe "let s:sp_comment    = ' guisp=".s:onyx      ."'"
   exe "let s:sp_red        = ' guisp=".s:jazzberry ."'"
   exe "let s:sp_orange     = ' guisp=".s:orange    ."'"
@@ -258,7 +258,7 @@ exe "hi! DiffDelete"    .s:fg_background  .s:bg_brick       .s:fmt_none
 exe "hi! DiffText"      .s:fg_background  .s:bg_blue        .s:fmt_none
 exe "hi! ErrorMsg"      .s:fg_background  .s:bg_brick       .s:fmt_stnd
 exe "hi! VertSplit"     .s:fg_window      .s:bg_none        .s:fmt_none
-exe "hi! Folded"        .s:fg_liver       .s:bg_darkcolumn  .s:fmt_none
+exe "hi! Folded"        .s:fg_davgray     .s:bg_darkcolumn  .s:fmt_none
 exe "hi! FoldColumn"    .s:fg_none        .s:bg_darkcolumn  .s:fmt_none
 exe "hi! SignColumn"    .s:fg_none        .s:bg_none        .s:fmt_none
 "		Incsearch"
@@ -267,40 +267,40 @@ exe "hi! CursorLineNr"  .s:fg_flavescent  .s:bg_none        .s:fmt_bold
 exe "hi! MatchParen"    .s:fg_background  .s:bg_changebg    .s:fmt_none
 exe "hi! ModeMsg"       .s:fg_apple       .s:bg_none        .s:fmt_none
 exe "hi! MoreMsg"       .s:fg_apple       .s:bg_none        .s:fmt_none
-exe "hi! NonText"       .s:fg_gray        .s:bg_none        .s:fmt_none
-exe "hi! Pmenu"         .s:fg_platinum    .s:bg_gray        .s:fmt_none
-exe "hi! PmenuSel"      .s:fg_platinum    .s:bg_gray        .s:fmt_revr
+exe "hi! NonText"       .s:fg_dgray       .s:bg_none        .s:fmt_none
+exe "hi! Pmenu"         .s:fg_lgray       .s:bg_dgray       .s:fmt_none
+exe "hi! PmenuSel"      .s:fg_lgray       .s:bg_dgray       .s:fmt_revr
 "		PmenuSbar"
 "		PmenuThumb"
 exe "hi! Question"      .s:fg_apple       .s:bg_none        .s:fmt_none
-exe "hi! Search"        .s:fg_orange      .s:bg_gray        .s:fmt_none
-exe "hi! SpecialKey"    .s:fg_gray        .s:bg_none        .s:fmt_none
+exe "hi! Search"        .s:fg_orange      .s:bg_dgray       .s:fmt_none
+exe "hi! SpecialKey"    .s:fg_dgray       .s:bg_none        .s:fmt_none
 exe "hi! SpellBad"      .s:fg_jazzberry   .s:bg_none        .s:fmt_undr
 exe "hi! SpellCap"      .s:fg_blue        .s:bg_none        .s:fmt_undr
 exe "hi! SpellLocal"    .s:fg_aqua        .s:bg_none        .s:fmt_undr
 exe "hi! SpellRare"     .s:fg_lavender    .s:bg_none        .s:fmt_undr
-exe "hi! StatusLine"    .s:fg_liver       .s:bg_background  .s:fmt_revr
-exe "hi! StatusLineNC"  .s:fg_window      .s:bg_liver       .s:fmt_revr
-exe "hi! TabLine"       .s:fg_platinum    .s:bg_darkcolumn  .s:fmt_revr
+exe "hi! StatusLine"    .s:fg_davgray     .s:bg_background  .s:fmt_revr
+exe "hi! StatusLineNC"  .s:fg_window      .s:bg_davgray     .s:fmt_revr
+exe "hi! TabLine"       .s:fg_lgray       .s:bg_darkcolumn  .s:fmt_revr
 "		TabLineFill"
 "		TabLineSel"
 exe "hi! Title"         .s:fg_flavescent  .s:bg_none        .s:fmt_none
-exe "hi! Visual"        .s:fg_none        .s:bg_gray        .s:fmt_none
+exe "hi! Visual"        .s:fg_none        .s:bg_dgray       .s:fmt_none
 "		VisualNos"
 exe "hi! WarningMsg"    .s:fg_jazzberry   .s:bg_none        .s:fmt_none
 "		WildMenu"
 
 " Use Xresources for background colour
 if has('gui_running') || g:apoklinon_use_Xresources != 1
-  exe "hi! Normal"        .s:fg_platinum    .s:bg_none        .s:fmt_none
+  exe "hi! Normal"        .s:fg_lgray       .s:bg_none        .s:fmt_none
 else
-  exe "hi! Normal"        .s:fg_platinum    .s:bg_none        .s:fmt_none
+  exe "hi! Normal"        .s:fg_lgray       .s:bg_none        .s:fmt_none
 endif
 
 "}}}
 " Generic Syntax Highlighting: (see :help group-name)"{{{
 " ----------------------------------------------------------------------------
-exe "hi! Comment"         .s:fg_liver       .s:bg_none        .s:fmt_none
+exe "hi! Comment"         .s:fg_davgray     .s:bg_none        .s:fmt_none
 
 exe "hi! Constant"        .s:fg_jazzberry   .s:bg_none        .s:fmt_none
 exe "hi! String"          .s:fg_apple       .s:bg_none        .s:fmt_none

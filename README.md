@@ -24,7 +24,7 @@ Due to the limited 256 palette, colours in Vim and gVim will still be slightly
 different. In order to get the same colours as gVim and use this colourscheme
 the way that it was intended, it is highly recommended that you:
 
-1.  Add these colours to ~/.Xresources:
+1.  Add these colours to ~/.Xresources or ~/.Xdefaults:
 
 
 2.  Use Xresources colours by setting in ~/.vimrc:
@@ -40,6 +40,5 @@ Will put some up soon (when the scheme is ready)
 
 - [X] Get Xdefaults under wraps for terminal colours.
 - [X] Shuffle less used colors to bold.
-- [ ] Rework monochrome gradient - probably too divergent, we can use most of these colours from the 256 palette, there's no need to fill Xdefaults with them.
-- [ ] If I remove most (if not all) the monochrome data, the divergence spectrum could be increased. There isn't a really decent green here and too much yellow probably.
+- [X] Rework monochrome gradient - probably too divergent, we can use most of these colours from the 256 palette, there's no need to fill Xdefaults with them. [Extended palette in general, but only use non 256 colours in Xdefaults] 
 
