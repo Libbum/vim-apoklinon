@@ -262,7 +262,7 @@ exe "hi! Folded"        .s:fg_davgray     .s:bg_darkcolumn  .s:fmt_none
 exe "hi! FoldColumn"    .s:fg_none        .s:bg_darkcolumn  .s:fmt_none
 exe "hi! SignColumn"    .s:fg_none        .s:bg_none        .s:fmt_none
 "		Incsearch"
-exe "hi! LineNr"        .s:fg_jazzberry   .s:bg_none        .s:fmt_none
+exe "hi! LineNr"        .s:fg_davgray     .s:bg_none        .s:fmt_none
 exe "hi! CursorLineNr"  .s:fg_flavescent  .s:bg_none        .s:fmt_bold
 exe "hi! MatchParen"    .s:fg_background  .s:bg_changebg    .s:fmt_none
 exe "hi! ModeMsg"       .s:fg_apple       .s:bg_none        .s:fmt_none
@@ -290,12 +290,7 @@ exe "hi! Visual"        .s:fg_none        .s:bg_dgray       .s:fmt_none
 exe "hi! WarningMsg"    .s:fg_jazzberry   .s:bg_none        .s:fmt_none
 "		WildMenu"
 
-" Use Xresources for background colour
-if has('gui_running') || g:apoklinon_use_Xresources != 1
-  exe "hi! Normal"        .s:fg_lgray       .s:bg_none        .s:fmt_none
-else
-  exe "hi! Normal"        .s:fg_lgray       .s:bg_none        .s:fmt_none
-endif
+exe "hi! Normal"        .s:fg_lgray       .s:bg_none        .s:fmt_none
 
 "}}}
 " Generic Syntax Highlighting: (see :help group-name)"{{{
@@ -303,30 +298,30 @@ endif
 exe "hi! Comment"         .s:fg_davgray     .s:bg_none        .s:fmt_none
 
 exe "hi! Constant"        .s:fg_jazzberry   .s:bg_none        .s:fmt_none
-exe "hi! String"          .s:fg_apple       .s:bg_none        .s:fmt_none
+exe "hi! String"          .s:fg_aqua        .s:bg_none        .s:fmt_none
 "		Character"
 "		Number"
 "		Boolean"
 "		Float"
 
 exe "hi! Identifier"      .s:fg_lavender    .s:bg_none        .s:fmt_none
-exe "hi! Function"        .s:fg_flavescent  .s:bg_none        .s:fmt_none
+exe "hi! Function"        .s:fg_sandy       .s:bg_none        .s:fmt_none
 
 exe "hi! Statement"       .s:fg_blue        .s:bg_none        .s:fmt_none
 "		Conditional"
 "		Repeat"
 "		Label"
-exe "hi! Operator"        .s:fg_aqua        .s:bg_none        .s:fmt_none
+exe "hi! Operator"        .s:fg_brick       .s:bg_none        .s:fmt_none
 "		Keyword"
 "		Exception"
 
-exe "hi! PreProc"         .s:fg_aqua        .s:bg_none        .s:fmt_none
+exe "hi! PreProc"         .s:fg_lemon       .s:bg_none        .s:fmt_none
 "		Include"
 "		Define"
 "		Macro"
 "		PreCondit"
 
-exe "hi! Type"            .s:fg_orange      .s:bg_none        .s:fmt_none
+exe "hi! Type"            .s:fg_brick       .s:bg_none        .s:fmt_none
 "		StorageClass"
 exe "hi! Structure"       .s:fg_aqua        .s:bg_none        .s:fmt_none
 "		Typedef"
@@ -338,13 +333,13 @@ exe "hi! Special"         .s:fg_apple       .s:bg_none        .s:fmt_none
 "		SpecialComment"
 "		Debug"
 "
-exe "hi! Underlined"      .s:fg_blue        .s:bg_none        .s:fmt_none
+exe "hi! Underlined"      .s:fg_blue        .s:bg_none        .s:fmt_undr
 
 exe "hi! Ignore"          .s:fg_none        .s:bg_none        .s:fmt_none
 
-exe "hi! Error"           .s:fg_jazzberry   .s:bg_none        .s:fmt_undr
+exe "hi! Error"           .s:fg_jazzberry   .s:bg_onyx        .s:fmt_revr
 
-exe "hi! Todo"            .s:fg_addfg       .s:bg_none        .s:fmt_none
+exe "hi! Todo"            .s:fg_brick       .s:bg_none        .s:fmt_bold
 
 " Quickfix window highlighting
 exe "hi! qfLineNr"        .s:fg_flavescent  .s:bg_none        .s:fmt_none

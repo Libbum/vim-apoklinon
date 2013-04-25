@@ -41,4 +41,15 @@ Will put some up soon (when the scheme is ready)
 - [X] Get Xdefaults under wraps for terminal colours.
 - [X] Shuffle less used colors to bold.
 - [X] Rework monochrome gradient - probably too divergent, we can use most of these colours from the 256 palette, there's no need to fill Xdefaults with them. [Extended palette in general, but only use non 256 colours in Xdefaults] 
+- [X] Realign colours [Initial pass, will work with it for a while to see if there's any useful improvements]
+- [ ] Test Markup
+- [ ] Test Haskell
+- [ ] Test Ruby
+- [ ] Test HTML
+- [ ] Test CSS/SCSS/SASS
+- [ ] Test Scala
+- [ ] Test Bash/Zsh
+- [ ] Test C/C++
+- [ ] Test Matlab
+- [ ] Test Latex
 
