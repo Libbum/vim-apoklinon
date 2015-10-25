@@ -246,6 +246,7 @@ endif
 " Vim Highlighting: (see :help highlight-groups)"{{{
 " ----------------------------------------------------------------------------
 exe "hi! ColorColumn"   .s:fg_none        .s:bg_onyx        .s:fmt_none
+exe "hi! Conceal"       .s:fg_flavescent  .s:bg_none        .s:fmt_none
 "		Conceal"
 "		Cursor"
 "		CursorIM"
