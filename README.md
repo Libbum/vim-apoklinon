@@ -4,8 +4,6 @@ vim-apoklinon
 A dark 256 colour scheme for Vim
 
 ## Philosophy
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FLibbum%2Fvim-apoklinon.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FLibbum%2Fvim-apoklinon?ref=badge_shield)
-
 
 From the Greek αποκλίνων, meaning divergent. A number of colourschemes out in the wild don't take any queues from colour theory; rather they mash a few colours together and hope for the best. Others certainly do take the time to generate a decent complimentary palette, but most seem to limit their options to only a few select colours rather than a large spread of possibilities. Apoklinon is an attempt at using the full range of the colour spectrum; whilst being tasteful, easy to read (and code) with, and also gives the user a slew of theming capability when porting to other projects.
 
