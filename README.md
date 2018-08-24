@@ -53,3 +53,7 @@ Will put some up soon (when the scheme is ready)
 - [ ] Test Matlab
 - [ ] Test Latex
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FLibbum%2Fvim-apoklinon.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FLibbum%2Fvim-apoklinon?ref=badge_large)
